@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-background-color: red;
-padding: 100px;
+export const SectionBox = styled.div`
+  padding: 50px;
 `;
