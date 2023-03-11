@@ -1,5 +1,4 @@
 import React from 'react';
-import { Children } from 'react';
 import { BtnFeed } from './feedbackOptions.styled';
 const FeedbackOptions = ({
   options,
