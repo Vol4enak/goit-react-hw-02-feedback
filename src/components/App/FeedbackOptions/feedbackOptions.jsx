@@ -1,14 +1,17 @@
 import React from 'react';
+import { Children } from 'react';
 import { BtnFeed } from './feedbackOptions.styled';
 const FeedbackOptions = ({
   options,
   onLeaveFeedback,
   onTotalCount,
   onTotalPercentage,
+
 }) => {
+
   return (
+    
     <>
-      <h1>Please leave feedback</h1>
       <ul>
         <li>
           {options.map(index => (

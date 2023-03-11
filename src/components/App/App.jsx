@@ -40,7 +40,7 @@ class App extends React.Component {
     const { good, neutral, bad, total, positivePercentage } = this.state;
     return (
       <SectionBox>
-        <Section>
+        <Section title={'Please leave feedback'}>
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
             onLeaveFeedback={this.countFeedback}
@@ -48,10 +48,9 @@ class App extends React.Component {
             onTotalPercentage={this.countPositiveFeedbackPercentage}
           />
         </Section>
-        <h2>Statistics</h2>
         <Notification message="There is no feedback" state={this.state.total} />
         {this.state.total > 0 && (
-          <Section>
+          <Section title={'Statistics'}>
             <Statistics
               good={good}
               neutral={neutral}
